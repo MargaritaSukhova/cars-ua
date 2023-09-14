@@ -4,10 +4,11 @@ import Nav from "../components/nav/Nav"
 
 const HomePage = props => {
   return (
-    <div>HomePage
-      <Nav />
-    </div>
-  )
+		<div>
+			<p>HomePage</p>
+			<Nav />
+		</div>
+	);
 }
 
 HomePage.propTypes = {}
