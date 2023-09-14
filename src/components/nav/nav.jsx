@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import { NavLink } from "react-router-dom";
 
-const nav = (props) => {
+const Nav = (props) => {
 	return (
 		<nav>
 			<NavLink to="/">Home</NavLink>
@@ -11,6 +11,6 @@ const nav = (props) => {
 	);
 };
 
-nav.propTypes = {};
+Nav.propTypes = {};
 
-export default nav;
+export default Nav;

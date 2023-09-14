@@ -1,9 +1,12 @@
 
 import PropTypes from 'prop-types'
+import Nav from "../components/nav/Nav"
 
 const HomePage = props => {
   return (
-    <div>HomePage</div>
+    <div>HomePage
+      <Nav />
+    </div>
   )
 }
 
