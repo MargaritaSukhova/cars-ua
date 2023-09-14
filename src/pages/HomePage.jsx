@@ -5,7 +5,7 @@ import Nav from "../components/nav/Nav"
 const HomePage = props => {
   return (
 		<div>
-			<p>HomePage</p>
+			<p>HomePage!</p>
 			<Nav />
 		</div>
 	);
