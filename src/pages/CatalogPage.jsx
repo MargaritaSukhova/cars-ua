@@ -1,12 +1,23 @@
+import { useEffect, useState } from "react";
+import { getCars } from "../shared/api/cars-api";
+import CarList from "../components/CarList/CarList";
 
-import PropTypes from 'prop-types'
+const CatalogPage = () => {
+	const [cars, setCars] = useState([]);
 
-const CatalogPage = props => {
-  return (
-    <div>CatalogPage</div>
-  )
-}
+	useEffect(() => {
+		getCars().then((res) => {
+			console.log(res);
+			setCars(res);
+		});
+	}, []);
 
-CatalogPage.propTypes = {}
+	return (
+		<div>
+			CatalogPage
+			<CarList cars={cars} />
+		</div>
+	);
+};
 
-export default CatalogPage
+export default CatalogPage;
