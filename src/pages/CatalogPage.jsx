@@ -1,22 +1,14 @@
-import { useEffect, useState } from "react";
-import { getCars } from "../shared/api/cars-api";
+import Container from "../components/Container/Container"
 import CarList from "../components/CarList/CarList";
 
 const CatalogPage = () => {
-	const [cars, setCars] = useState([]);
-
-	useEffect(() => {
-		getCars().then((res) => {
-			console.log(res);
-			setCars(res);
-		});
-	}, []);
 
 	return (
-		<div>
-			CatalogPage
-			<CarList cars={cars} />
-		</div>
+		<Container>
+			<h2>CatalogPage</h2>
+
+			<CarList />
+		</Container>
 	);
 };
 
