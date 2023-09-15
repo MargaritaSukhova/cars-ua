@@ -1,0 +1,52 @@
+{
+
+"accessories"
+: 
+["Premium Interior Package", "Autopilot Full Self-Driving Capability", "15-inch Touchscreen Display"],
+"address"
+: 
+"123 Green Street, Kiev, Ukraine",
+"description"
+: 
+"The Tesla Model 3 is an electric car known for its impressive range, cutting-edge technology, and environmentally friendly performance.",
+"engineSize"
+: 
+"Electric Motor",
+"fuelConsumption"
+: 
+"Electric (0.0)",
+"functionalities"
+: 
+["Tesla Autopilot", "Long Range Battery", "Supercharger Network Access"],
+"id"
+: 
+9645,
+"img"
+: 
+"https://tsk.ua/datacache/c/9/7/e/6/c97e6fdc45200bed4bab1b031ef63a43355a82ca.jpeg",
+"make"
+: 
+"Tesla",
+"mileage"
+: 
+2200,
+"model"
+: 
+"Model 3",
+"rentalCompany"
+: 
+"Green Car Rentals",
+"rentalConditions"
+: 
+
+"Minimum age: 25\nValid driver's license\nSecurity deposit and charging plan required",
+"rentalPrice"
+: 
+"$70",
+"type"
+: 
+"Electric Car",
+"year"
+: 
+2022
+}

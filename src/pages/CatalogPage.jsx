@@ -1,13 +1,13 @@
-import Container from "../components/Container/Container"
+import Container from "../components/Container/Container";
 import CarList from "../components/CarList/CarList";
 
-const CatalogPage = () => {
 
+const CatalogPage = ({ favorites, setFavorites }) => {
 	return (
 		<Container>
-			<h2>CatalogPage</h2>
+			<h2>CatalogPage </h2>
 
-			<CarList />
+			<CarList favorites={favorites} setFavorites={setFavorites} />
 		</Container>
 	);
 };

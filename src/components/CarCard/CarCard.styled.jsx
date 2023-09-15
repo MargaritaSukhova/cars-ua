@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const Item = styled.li`
 	width: 274px;
+	position: relative;
 `;
 
 export const Img = styled.img`
@@ -36,11 +37,12 @@ export const InfoContainer = styled.div`
 	display: flex;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	row-gap: 6px;
-	column-gap: 4px;
+	column-gap: 6px;
+	row-gap: 4px;
 	height: 40px;
 	width: 270px;
 	align-content: flex-start;
+	margin-bottom: 28px;
 `;
 
 export const InfoText = styled.p`
@@ -61,5 +63,5 @@ export const InfoTextLast = styled.p`
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
-	max-width: 29%;
+	max-width: 27%;
 `;

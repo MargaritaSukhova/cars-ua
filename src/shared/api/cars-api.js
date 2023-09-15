@@ -5,7 +5,6 @@ axios.defaults.baseURL = "https://65032a90a0f2c1f3faeb9076.mockapi.io";
 export const getCars = async () => {
 	try {
 		const { data } = await axios.get("/cars");
-		console.log(data);
 		return data;
 	} catch (err) {
 		console.log(err.response.data.message);

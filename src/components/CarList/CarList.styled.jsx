@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 export const List = styled.ul`
 	width: 1184px;
 	display: flex;
-	gap: 29px;
+	column-gap: 29px;
+	row-gap: 50px;
 	flex-wrap: wrap;
 `;
