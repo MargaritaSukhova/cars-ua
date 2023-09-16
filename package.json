@@ -1,6 +1,6 @@
 {
-  "name": "m-cars-rental",
-  "private": false,
+  "name": "cars-ua",
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
