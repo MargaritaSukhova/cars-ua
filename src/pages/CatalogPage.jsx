@@ -1,7 +1,7 @@
 import Container from "../components/Container/Container";
 import Filter from "../components/Filter/Filter";
 import CarList from "../components/CarList/CarList";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { getCars, getPaginatedCars } from "../shared/api/cars-api";
 import { LoadMoreButton } from "../components/Buttons/Buttons.styled";
 import Loader from "../components/Loader/Loader"
@@ -10,7 +10,7 @@ const CatalogPage = ({ favorites, setFavorites }) => {
 	const [cars, setCars] = useState([]);
 	const [paginatedCars, setPaginatedCars] = useState([]);
 	const [page, setPage] = useState(1);
-	const isFirstRender = useRef(true)
+	// const isFirstRender = useRef(true)
 	const [isLoading, setIsLoading] = useState(false)
 
 	useEffect(() => {
