@@ -23,16 +23,16 @@ const CatalogPage = ({ favorites, setFavorites }) => {
 	}, []);
 
 	useEffect(() => {
-		if (isFirstRender.current) {
-			isFirstRender.current = false;
-			return;
-		}
+		// if (isFirstRender.current) {
+		// 	isFirstRender.current = false;
+		// 	return;
+		// }
 		setIsLoading(true);
 			getPaginatedCars(page)
 				.then((data) => {
 					setPaginatedCars((prevState) => [...prevState, ...data]);
 				})
-				.finally(setIsLoading(false));;
+				.finally(setIsLoading(false));
 	}, [page]);
 
 	const loadMore = () => {
