@@ -4,8 +4,8 @@ import { getCars } from "../../shared/api/cars-api";
 import CarCard from "../CarCard/CarCard";
 import { List } from "./CarList.styled";
 
-const CarList = ({ favorites, setFavorites }) => {
-	const [cars, setCars] = useState([]);
+const CarList = ({ cars, favorites, setFavorites }) => {
+	// const [cars, setCars] = useState([]);
 
 	// const isFavorite = (id) => favorites.includes(id);
 
@@ -29,24 +29,23 @@ const CarList = ({ favorites, setFavorites }) => {
 	// 	}
 	// };
 
-	useEffect(() => {
-		getCars().then((data) => {
-			setCars(data);
-		});
-	}, []);
+	// useEffect(() => {
+	// 	getCars().then((data) => {
+	// 		setCars(data);
+	// 	});
+	// }, []);
 
 	return (
 		<List>
-			{cars.length > 0 &&
-				cars.map((car) => (
-					<CarCard
-						key={car.id}
-						car={car}
-						cars={cars}
-						favorites={favorites}
-						setFavorites={setFavorites}
-					/>
-				))}
+			{cars.map((car) => (
+				<CarCard
+					key={car.id}
+					car={car}
+					cars={cars}
+					favorites={favorites}
+					setFavorites={setFavorites}
+				/>
+			))}
 		</List>
 	);
 };

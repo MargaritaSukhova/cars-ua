@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { ReactComponent as Heart } from "../../assets/icons/heart.svg";
 
 const Button = styled.button`
 	display: flex;
@@ -25,15 +24,15 @@ const Button = styled.button`
 	}
 `;
 
-export const LearnMore = styled(Button)`
+export const LearnMoreButton = styled(Button)`
 	padding: 12px 99px;
 `;
 
-export const Search = styled(Button)`
+export const SearchButton = styled(Button)`
 	padding: 14px 44px;
 `;
 
-export const RentalCar = styled(Button)`
+export const RentalCarButton = styled(Button)`
 	padding: 12px 50px;
 `;
 
@@ -48,6 +47,14 @@ export const Favorites = styled.button`
 	}
 `;
 
-export const HeartIcon = styled(Heart)`
-	fill: rgba(255, 255, 255, 0.8);
+export const LoadMoreButton = styled.button`
+	color: #3470ff;
+	font-family: Manrope;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	text-decoration-line: underline;
+	border: 0;
+	background-color: transparent;
 `;
