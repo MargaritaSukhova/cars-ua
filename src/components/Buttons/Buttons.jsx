@@ -23,8 +23,8 @@ export const RentalCarButton = () => {
 export const FavoritesButton = ({ id, cars, favorites, setFavorites }) => {
 	// const isFavorite = favorites.includes(id);
 
-	const isFavorite = (id) =>
-		favorites.find((car) => car.id === id) !== undefined;
+	const isFavorite = (id) => favorites.find((car) => car.id === id) !== undefined;
+		
 
 	// const addToFavorites = (id) => {
 	// 	setFavorites((prevState) => [...prevState, id]);
@@ -35,10 +35,7 @@ export const FavoritesButton = ({ id, cars, favorites, setFavorites }) => {
 		const favorite = cars.find((car) => car.id === id);
 
 		setFavorites((prevState) => [...prevState, favorite]);
-		
 	};
-
-
 
 	// const removeFromFavorites = (id) => {
 	// 	// console.log(isFavorite(id));
@@ -58,7 +55,6 @@ export const FavoritesButton = ({ id, cars, favorites, setFavorites }) => {
 			setFavorites(newFavorites);
 			// const index = favorites.findIndex((car) => car.id === id);
 			// favorites.splice(index, 1);
-
 		}
 	};
 
