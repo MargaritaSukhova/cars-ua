@@ -1,1 +1,0 @@
-import{j as r,C as n}from"./index-9f1fa782.js";import{F as t,C as e}from"./CarList-dae9a3f1.js";const o=({favorites:s,setFavorites:a})=>r.jsxs(n,{children:[r.jsx(t,{}),(s==null?void 0:s.length)>0?r.jsx(e,{cars:s,favorites:s,setFavorites:a}):r.jsx("h2",{children:"You haven't added any cars to favorites"})]});o.propTypes={};export{o as default};
