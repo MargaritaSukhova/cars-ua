@@ -1,4 +1,6 @@
-import{n}from"./index-2949323a.js";const t=n.main`
+import{n}from"./index-66114a2f.js";const e=n.main`
+
+
 	width: 1440px;
 	margin: 0 auto;
 	padding: 100px 128px;
@@ -6,10 +8,11 @@ import{n}from"./index-2949323a.js";const t=n.main`
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-`,e=n.main`
-	background-image: url(src/assets/images/background.jpg);
+`,i=n.main`
+	background-image: url("/src/assets/images/background.jpg");
+	background-size: cover;
 	width: 1440px;
 	margin: 0 auto;
 	padding: 60px 128px;
 	height: calc(100vh - 80px);
-`;export{t as C,e as H};
+`;export{e as C,i as H};
