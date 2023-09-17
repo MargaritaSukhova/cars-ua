@@ -1,4 +1,4 @@
-import{n}from"./index-9e942da6.js";const t=n.main`
+import{n}from"./index-2949323a.js";const t=n.main`
 	width: 1440px;
 	margin: 0 auto;
 	padding: 100px 128px;

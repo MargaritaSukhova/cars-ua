@@ -1,4 +1,4 @@
-import{n,j as e,N as r,B as l}from"./index-9e942da6.js";import{H as o}from"./Container.styled-82318c87.js";const c="/cars-ua/assets/calendar-d8f885b4.png",x="/cars-ua/assets/magnifier-ab74691c.png",h="/cars-ua/assets/wallet-8afb17af.png",f="/cars-ua/assets/clean-444ae1c8.png",d=n.ul`
+import{n,j as e,N as r,B as l}from"./index-2949323a.js";import{H as o}from"./Container.styled-b1744c1d.js";const c="/cars-ua/assets/calendar-d8f885b4.png",x="/cars-ua/assets/magnifier-ab74691c.png",h="/cars-ua/assets/wallet-8afb17af.png",f="/cars-ua/assets/clean-444ae1c8.png",d=n.ul`
 	margin-top: 50px;
   margin-left: 400px;
   margin-bottom: 50px;
