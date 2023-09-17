@@ -1,4 +1,4 @@
-import{n,j as e,N as r,B as l}from"./index-e5f64618.js";import{H as o}from"./Container.styled-f14df469.js";const c="/cars-ua/assets/calendar-d8f885b4.png",x="/cars-ua/assets/magnifier-ab74691c.png",h="/cars-ua/assets/wallet-8afb17af.png",f="/cars-ua/assets/clean-444ae1c8.png",d=n.ul`
+import{n,j as e,N as r,B as l}from"./index-9e942da6.js";import{H as o}from"./Container.styled-82318c87.js";const c="/cars-ua/assets/calendar-d8f885b4.png",x="/cars-ua/assets/magnifier-ab74691c.png",h="/cars-ua/assets/wallet-8afb17af.png",f="/cars-ua/assets/clean-444ae1c8.png",d=n.ul`
 	margin-top: 50px;
   margin-left: 400px;
   margin-bottom: 50px;
@@ -36,4 +36,4 @@ import{n,j as e,N as r,B as l}from"./index-e5f64618.js";import{H as o}from"./Con
 	font-style: normal;
 	font-weight: 600;
 	line-height: 48px;
-`,m=()=>e.jsxs(o,{children:[e.jsx(g,{children:"Cars UA – Search, Compare & Save"}),e.jsx(p,{}),e.jsx(r,{to:"/catalog",children:e.jsx(l,{type:"button",children:"Book now"})})]});m.propTypes={};export{m as default};
+`,u=()=>e.jsxs(o,{children:[e.jsx(g,{children:"Cars UA – Search, Compare & Save"}),e.jsx(p,{}),e.jsx(r,{to:"/catalog",children:e.jsx(l,{type:"button",children:"Book now"})})]});export{u as default};

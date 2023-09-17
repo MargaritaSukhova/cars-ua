@@ -1,4 +1,4 @@
-import{n}from"./index-e5f64618.js";const t=n.main`
+import{n}from"./index-9e942da6.js";const t=n.main`
 	width: 1440px;
 	margin: 0 auto;
 	padding: 100px 128px;
@@ -12,6 +12,4 @@ import{n}from"./index-e5f64618.js";const t=n.main`
 	margin: 0 auto;
 	padding: 60px 128px;
 	height: calc(100vh - 80px);
-
-
 `;export{t as C,e as H};
