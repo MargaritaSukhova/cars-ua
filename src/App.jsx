@@ -12,13 +12,6 @@ const CatalogPage = lazy(() => import("../src/pages/CatalogPage"));
 const FavoritesPage = lazy(() => import("../src/pages/FavoritesPage"));
 
 const App = () => {
-	// const [favorites, setFavorites] = useState(() => 
-	// 	JSON.parse(window.localStorage.getItem("favorites")) || []
-	// );
-
-	// useEffect(() => {
-	// 	window.localStorage.setItem("favorites", JSON.stringify(favorites));
-	// }, [favorites])
 
 	const [favorites, setFavorites] = useLocalStorage("favorites", []);
 
