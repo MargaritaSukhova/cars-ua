@@ -39,7 +39,7 @@ export const FavoritesButton = ({ id, cars, favorites, setFavorites }) => {
 };
 
 FavoritesButton.propTypes = {
-	id: PropTypes.string.isRequired,
+	id: PropTypes.number.isRequired,
 	cars: PropTypes.array.isRequired,
 	favorites: PropTypes.array.isRequired,
 	setFavorites: PropTypes.func.isRequired,
