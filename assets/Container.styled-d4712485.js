@@ -1,4 +1,4 @@
-import{n as a}from"./index-2223f87f.js";const n="/cars-ua/assets/background-7a0413ff.jpg",t=a.main`
+import{n as a}from"./index-968d1cbb.js";const n="/cars-ua/assets/background-7a0413ff.jpg",t=a.main`
 	width: 1440px;
 	margin: 0 auto;
 	padding: 100px 128px;
