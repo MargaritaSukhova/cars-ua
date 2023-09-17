@@ -98,7 +98,7 @@ const CatalogPage = ({ favorites, setFavorites }) => {
 				</div>
 			) : (
 				<>
-					<Filter setFilter={setFilter} />
+					<Filter setFilter={setFilter} filteredCars={filteredCars} />
 					{cars?.length > 0 ? (
 						<CarListContainer ref={carListRef}>
 							<CarList

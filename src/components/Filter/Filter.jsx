@@ -17,7 +17,7 @@ import {
 	InputTo,
 } from "./Filter.styled";
 
-const Filter = ({ setFilter }) => {
+const Filter = ({ setFilter, filteredCars }) => {
 	const [makes, setMakes] = useState([]);
 
 	useEffect(() => {
@@ -43,14 +43,14 @@ const Filter = ({ setFilter }) => {
 	const { inputNumber: inputNumberTo, onChange: handleChangeTo } =
 		useNumberFormatter();
 
-	const { register, handleSubmit, control } = useForm({
-	});
+	const { register, handleSubmit, control, reset } = useForm({});
 
 	const getValue = (value, options) => {
 		value ? options.find((option) => option.value === value) : "";
 	};
 
 	const onSubmit = (data) => {
+		
 		const { make, price, from, to } = data;
 		if (from === "" && to === "" && make === undefined && price === undefined) {
 			Notify.failure("Please choose a parameter to filter cars");
@@ -58,13 +58,20 @@ const Filter = ({ setFilter }) => {
 		}
 		const fromNumber = parseInt(from.replace(/,/g, ""), 10);
 		const toNumber = parseInt(to.replace(/,/g, ""), 10);
-	
+
 		if (fromNumber > toNumber && toNumber !== "") {
 			Notify.failure("Mileage is incorrect!");
 			return;
 		}
-			setFilter(data);
+
+		setFilter(data);
 	};
+
+	useEffect(() => {
+		if (filteredCars.length === 0) {
+			reset({ make: "", price: "", from: "", to: "" });
+		}
+	}, [filteredCars, reset]);
 
 	return (
 		<FilterForm onSubmit={handleSubmit(onSubmit)}>
@@ -123,7 +130,8 @@ const Filter = ({ setFilter }) => {
 };
 
 Filter.propTypes = {
-	setFilter: PropTypes.func.isRequired
+	setFilter: PropTypes.func.isRequired,
+	filteredCars: PropTypes.array.isRequired,
 };
 
 export default Filter;
