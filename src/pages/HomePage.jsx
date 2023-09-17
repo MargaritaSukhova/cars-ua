@@ -1,16 +1,21 @@
+import { HomeContainer } from "../components/Container/Container.styled";
+import Services from "../components/Services/Services";
+import { HomeTitle } from "../components/Title/Title.styled";
+import { BookButton } from "../components/Buttons/Buttons.styled";
+import { NavLink } from "react-router-dom";
 
-import PropTypes from 'prop-types'
-import Navigation from "../components/Navigation/Navigation"
-
-const HomePage = props => {
-  return (
-		<div>
-			<p>HomePage!</p>
-<Navigation />
-		</div>
+const HomePage = () => {
+	return (
+		<HomeContainer>
+			<HomeTitle>Cars UA – Search, Compare & Save</HomeTitle>
+			<Services />
+			<NavLink to="/catalog">
+				<BookButton type="button">Book now</BookButton>
+			</NavLink>
+		</HomeContainer>
 	);
-}
+};
 
-HomePage.propTypes = {}
+HomePage.propTypes = {};
 
-export default HomePage
+export default HomePage;

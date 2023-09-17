@@ -42,7 +42,6 @@ const CatalogPage = ({ favorites, setFavorites }) => {
 	return (
 		<Container>
 			{isLoading && <Loader/>}
-			<h2>CatalogPage </h2>
 			<Filter />
 			{cars?.length > 0 ? (
 				<CarList

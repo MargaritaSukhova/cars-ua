@@ -5,6 +5,7 @@ import useLocalStorage from "./hooks/useLocalStorage";
 import HomePage from "../src/pages/HomePage";
 import CatalogPage from "../src/pages/CatalogPage";
 import FavoritesPage from "../src/pages/FavoritesPage";
+import SharedLayout from "./components/SharedLayout/SharedLayout";
 
 const App = () => {
 	// const [favorites, setFavorites] = useState(() => 
@@ -20,19 +21,24 @@ const App = () => {
 	return (
 		<>
 			<Routes>
-				<Route path="/" element={<HomePage />} />
-				<Route
-					path="/catalog"
-					element={
-						<CatalogPage favorites={favorites} setFavorites={setFavorites} />
-					}
-				/>
-				<Route
-					path="/favorites"
-					element={
-						<FavoritesPage favorites={favorites} setFavorites={setFavorites} />
-					}
-				/>
+				<Route path="/" element={<SharedLayout />}>
+					<Route index element={<HomePage />} />
+					<Route
+						path="/catalog"
+						element={
+							<CatalogPage favorites={favorites} setFavorites={setFavorites} />
+						}
+					/>
+					<Route
+						path="/favorites"
+						element={
+							<FavoritesPage
+								favorites={favorites}
+								setFavorites={setFavorites}
+							/>
+						}
+					/>
+				</Route>
 				<Route path="*" element={<HomePage />} />
 			</Routes>
 		</>

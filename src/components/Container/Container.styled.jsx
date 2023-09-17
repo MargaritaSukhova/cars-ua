@@ -1,12 +1,21 @@
 import styled from "@emotion/styled";
 
-export const ContainerStyled = styled.div`
+export const ContainerStyled = styled.main`
 	width: 1440px;
 	margin: 0 auto;
-	padding-left: 128px;
-	padding-right: 128px;
+	padding: 100px 128px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+`;
+
+export const HomeContainer = styled.main`
+	background-image: url(src/assets/images/background.jpg);
+	width: 1440px;
+	margin: 0 auto;
+	padding: 60px 128px;
+	height: calc(100vh - 80px);
+
+
 `;
