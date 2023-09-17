@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { NavButton } from "../Buttons/Buttons.styled";
-import { NavStyled, NavContainer } from "./Navigation.styled";
+import { NavStyled, NavContainer, StyledLink } from "./Navigation.styled";
 import Logo from "../../assets/images/logo.webp";
 
 const Nav = () => {
@@ -10,21 +10,21 @@ const Nav = () => {
 				<img src={Logo} width="55" />
 			</NavLink>
 			<NavContainer>
-				<NavLink to="/">
+				<StyledLink to="/">
 					<NavButton className="btn" type="buttob">
 						<p>Home</p>
 					</NavButton>
-				</NavLink>
-				<NavLink to="/catalog">
+				</StyledLink>
+				<StyledLink to="/catalog">
 					<NavButton className="btn" type="buttob">
 						<p>Catalog</p>
 					</NavButton>
-				</NavLink>
-				<NavLink to="/favorites">
+				</StyledLink>
+				<StyledLink to="/favorites">
 					<NavButton className="btn" type="buttob">
 						<p>Favorites</p>
 					</NavButton>
-				</NavLink>
+				</StyledLink>
 			</NavContainer>
 		</NavStyled>
 	);
