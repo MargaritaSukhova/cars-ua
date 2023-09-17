@@ -15,6 +15,7 @@ import {
 	InputFrom,
 	InputTo,
 } from "./Filter.styled";
+import { useSearchParams } from "react-router-dom";
 
 const Filter = () => {
 	const [makes, setMakes] = useState([]);
@@ -41,6 +42,8 @@ const Filter = () => {
 		useNumberFormatter();
 	const { inputNumber: inputNumberTo, onChange: handleChangeTo } =
 		useNumberFormatter();
+	
+	const [searchParams, setSearchParams] = useSearchParams()
 
 	return (
 		<div>
@@ -52,6 +55,7 @@ const Filter = () => {
 						name="model"
 						placeholder="Enter the text"
 						classNamePrefix="select"
+						onChange={(e) => setSearchParams({ model: e.target.value })}
 					/>
 				</Label>
 				<Label htmlFor="price">
@@ -61,6 +65,7 @@ const Filter = () => {
 						name="price"
 						placeholder="To $"
 						classNamePrefix="select"
+						onChange={(e) => setSearchParams({ rentalPrice: e.target.value })}
 					/>
 				</Label>
 				<Fieldset>

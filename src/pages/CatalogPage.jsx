@@ -13,50 +13,56 @@ const CatalogPage = ({ favorites, setFavorites }) => {
 	// const isFirstRender = useRef(true)
 	const [isLoading, setIsLoading] = useState(false)
 
-	useEffect(() => {
-		setIsLoading(true);
-		getCars()
-			.then((data) => {
-				setCars(data);
-			})
-			.finally(setIsLoading(false));
-	}, []);
 
-	useEffect(() => {
-		// if (isFirstRender.current) {
-		// 	isFirstRender.current = false;
-		// 	return;
-		// }
-		setIsLoading(true);
-			getPaginatedCars(page)
-				.then((data) => {
-					setPaginatedCars((prevState) => [...prevState, ...data]);
-				})
-				.finally(setIsLoading(false));
-	}, [page]);
+
+	  useEffect(() => {
+    setIsLoading(true);
+    getCars()
+      .then((data) => {
+        setCars(data);
+      })
+      .finally(() => setIsLoading(false)); 
+  }, []);
+
+	  useEffect(() => {
+    setIsLoading(true);
+    getPaginatedCars(page)
+      .then((data) => {
+        setPaginatedCars((prevState) => [...prevState, ...data]);
+      })
+      .finally(() => setIsLoading(false)); 
+  }, [page]);
 
 	const loadMore = () => {
 		setPage((prevPage) => prevPage + 1);
 	};
 
 	return (
-		<Container>
-			{isLoading && <Loader/>}
-			<Filter />
-			{cars?.length > 0 ? (
-				<CarList
-					cars={paginatedCars}
-					favorites={favorites}
-					setFavorites={setFavorites}
-				/>
-			) : (
-				<h2>Unfortunately, we couldn't find any cars</h2>
-			)}
 
-			{cars.length > paginatedCars.length && (
-				<LoadMoreButton type="button" onClick={loadMore}>
-					Load more
-				</LoadMoreButton>
+		<Container>
+			{isLoading ? (
+				<div>
+					<Loader />
+				</div>
+			) : (
+				<>
+					<Filter />
+					{cars?.length > 0 ? (
+						<CarList
+							cars={paginatedCars}
+							favorites={favorites}
+							setFavorites={setFavorites}
+						/>
+					) : (
+						<h2>Unfortunately, we couldn't find any cars</h2>
+					)}
+
+					{cars.length > paginatedCars.length && (
+						<LoadMoreButton type="button" onClick={loadMore}>
+							Load more
+						</LoadMoreButton>
+					)}
+				</>
 			)}
 		</Container>
 	);

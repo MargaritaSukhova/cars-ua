@@ -1,11 +1,15 @@
-import { useEffect, useState } from "react";
+import { lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import useLocalStorage from "./hooks/useLocalStorage";
-import HomePage from "../src/pages/HomePage";
-import CatalogPage from "../src/pages/CatalogPage";
-import FavoritesPage from "../src/pages/FavoritesPage";
+// import HomePage from "../src/pages/HomePage";
+// import CatalogPage from "../src/pages/CatalogPage";
+// import FavoritesPage from "../src/pages/FavoritesPage";
 import SharedLayout from "./components/SharedLayout/SharedLayout";
+
+const HomePage = lazy(() => import("../src/pages/HomePage"));
+const CatalogPage = lazy(() => import("../src/pages/CatalogPage"));
+const FavoritesPage = lazy(() => import("../src/pages/FavoritesPage"));
 
 const App = () => {
 	// const [favorites, setFavorites] = useState(() => 
