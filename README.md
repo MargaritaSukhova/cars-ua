@@ -1,7 +1,7 @@
 <h1 align="center">Cars UA</h1>
 <h2 align="center">
 
-<img src="src/images/md/home.jpg">
+<img src="src/assets/images/md/home.jpg">
 
 
 ## About this project
@@ -10,11 +10,11 @@ Cars UA is a SPA for fast and easy car rental. The site allows:
 
 * searching cars by models, price or milage
 
-<img src="src/images/md/catalogue.jpg">
+<img src="src/assets/images/md/catalog.jpg">
 
 * adding cars to the list of favorites
 
-<img src="src/images/md/favorites.jpg">
+<img src="src/assets/images/md/favorites.jpg">
 
 ## Technologies and libraries used to create the project:
 
