@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import background from "../../assets/images/background.jpg";
 
 export const ContainerStyled = styled.main`
 	width: 1440px;
@@ -11,7 +12,8 @@ export const ContainerStyled = styled.main`
 `;
 
 export const HomeContainer = styled.main`
-	background-image: url("/src/assets/images/background.jpg");
+  background-image: url(${background});
+	background-repeat: no-repeat;
 	background-size: cover;
 	width: 1440px;
 	margin: 0 auto;
