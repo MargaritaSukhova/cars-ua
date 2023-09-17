@@ -21,6 +21,9 @@ const FavoritesPage = ({ favorites, setFavorites }) => {
 	);
 };
 
-FavoritesPage.propTypes = {}
+FavoritesPage.propTypes = {
+	favorites: PropTypes.array.isRequired,
+	setFavorites: PropTypes.func.isRequired,
+};
 
 export default FavoritesPage

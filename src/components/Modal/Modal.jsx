@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
+import PropTypes from "prop-types";
 import { RentalCarButton } from "../Buttons/Buttons.styled";
 import { ReactComponent as X } from "../../assets/icons/x.svg";
 
@@ -8,24 +9,16 @@ import {
 	Backdrop,
 	CloseButton,
 	CarImg,
-	// InfoWrapper,
 	TitleContainer,
 	Title,
 	TitleAccent,
-	// CarInfo,
-	// CarText,
-	// ModelBlue,
 	SecondaryInfo,
 	SecondaryCarText,
-	// Accessories,
 	SecondaryTitle,
 	Descriprion,
 	AccessoryList,
-	// AccessoryListItem,
-	// RentalTitle,
 	RentalItem,
 	RentalInfo,
-	// RentalBlock,
 } from "./Modal.styled";
 
 const modalRoot = document.querySelector("#modal-root");
@@ -99,7 +92,7 @@ const Modal = ({
 				</CloseButton>
 
 				<CarImg src={img} alt={description} />
-				{/* <InfoWrapper> */}
+
 				<TitleContainer>
 					<Title>
 						{make}
@@ -118,7 +111,7 @@ const Modal = ({
 					<SecondaryCarText>Engine Size: {engineSize}</SecondaryCarText>
 				</SecondaryInfo>
 				<Descriprion>{description}</Descriprion>
-				{/* <Accessories> */}
+
 				<SecondaryTitle>Accessories and functionalities:</SecondaryTitle>
 				<AccessoryList>
 					{accessories.map((accessory, index) => (
@@ -128,8 +121,7 @@ const Modal = ({
 						<SecondaryCarText key={index}>{functionality}</SecondaryCarText>
 					))}
 				</AccessoryList>
-				{/* </Accessories> */}
-				{/* <RentalBlock> */}
+
 				<SecondaryTitle>Rental Conditions:</SecondaryTitle>
 				<RentalInfo>
 					<RentalItem>
@@ -147,13 +139,15 @@ const Modal = ({
 				<RentalCarButton type="button" onClick={handleCallButtonClick}>
 					Rental car
 				</RentalCarButton>
-				{/* </RentalBlock> */}
-				{/* <RentalBtn /> */}
-				{/* </InfoWrapper> */}
 			</ModalContainer>
 		</Backdrop>,
 		modalRoot
 	);
+};
+
+Modal.propTypes = {
+	onClose: PropTypes.func.isRequired,
+	car: PropTypes.shape({}).isRequired,
 };
 
 export default Modal;

@@ -1,9 +1,7 @@
+import PropTypes from "prop-types";
 import { ContainerStyled } from "./Container.styled";
 
-import PropTypes from "prop-types";
-
-const Container = (props) => {
-	const { children } = props;
+const Container = ({ children }) => {
 	return <ContainerStyled>{children}</ContainerStyled>;
 };
 

@@ -16,6 +16,4 @@ export const HomeContainer = styled.main`
 	margin: 0 auto;
 	padding: 60px 128px;
 	height: calc(100vh - 80px);
-
-
 `;

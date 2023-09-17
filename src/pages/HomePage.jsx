@@ -16,6 +16,4 @@ const HomePage = () => {
 	);
 };
 
-HomePage.propTypes = {};
-
 export default HomePage;

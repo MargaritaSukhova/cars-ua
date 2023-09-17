@@ -1,11 +1,11 @@
-import Calendar from "../../assets/images/calendar.png"
-import Magnifier from "../../assets/images/magnifier.png"
+import Calendar from "../../assets/images/calendar.png";
+import Magnifier from "../../assets/images/magnifier.png";
 import Wallet from "../../assets/images/wallet.png";
 import Clean from "../../assets/images/clean.png";
 import { List, Item, Title, TextContainer, Text } from "./Services.styled";
 
-const Services = ()  => {
-  return (
+const Services = () => {
+	return (
 		<List>
 			<Item>
 				<img src={Calendar} alt="Calendar" width="70" />
@@ -43,7 +43,6 @@ const Services = ()  => {
 			</Item>
 		</List>
 	);
-}
+};
 
-
-export default Services
+export default Services;
