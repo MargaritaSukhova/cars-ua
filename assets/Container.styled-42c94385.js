@@ -1,4 +1,4 @@
-import{n}from"./index-780a81cf.js";const e=n.main`
+import{n}from"./index-c2d6fba8.js";const e=n.main`
 	width: 1440px;
 	margin: 0 auto;
 	padding: 100px 128px;
