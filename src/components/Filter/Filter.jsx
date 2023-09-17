@@ -1,7 +1,7 @@
-// import React from "react";
+
 // import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-// import Select from "react-select";
+
 import { getMakes } from "../../shared/api/cars-api";
 import { SearchButton } from "../Buttons/Buttons.styled";
 import useNumberFormatter from "../../hooks/useNumberFormatter";

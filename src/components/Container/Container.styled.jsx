@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 
 export const ContainerStyled = styled.main`
+
+
 	width: 1440px;
 	margin: 0 auto;
 	padding: 100px 128px;
@@ -11,7 +13,8 @@ export const ContainerStyled = styled.main`
 `;
 
 export const HomeContainer = styled.main`
-	background-image: url(src/assets/images/background.jpg);
+	background-image: url("/src/assets/images/background.jpg");
+	background-size: cover;
 	width: 1440px;
 	margin: 0 auto;
 	padding: 60px 128px;
